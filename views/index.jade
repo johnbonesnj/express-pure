@@ -1,0 +1,46 @@
+extends layout
+
+block content
+  .pure-g-r#layout
+    a(href="#menu", id="menuLink", class="pure-menu-link")
+      <img src="/img/navicon-png2x.png" width="20" alt="Menu toggle">
+
+    .pure-u#menu
+      .pure-menu.pure-menu-open
+        a(class="pure-menu-heading", href="/") Pure
+        ul
+          li
+            <a href="/base/">Base</a>
+          li
+            <a href="/grids/">Grids</a>
+          li
+            <a href="/forms/">Forms</a>
+          li
+            <a href="/buttons/">Buttons</a>
+          li
+            <a href="/tables/">Tables</a>
+          li
+            <a href="/menus/">Menus</a>
+          li.menu-item-divided
+            <a href="/customize/">Customize</a>
+          li
+            <a href="/extend/">Extend</a>
+          li
+            <a href="/layouts/">Layouts</a>
+          li
+            <a href="http://blog.purecss.io/">Blog</a>
+          li
+            <a href="https://github.com/yui/pure/releases/">Releases</a>
+          li.menu-item-divided
+            <a href="http://yui.github.io/skinbuilder/?mode=pure">Skin Builder</a>
+          li
+            <a href="http://yuilibrary.com/">YUI Library</a>
+
+    .pure-u-1#main
+        .hero
+          h1.pure-u-1= title
+          h2.pure-u-3-4.l-centered Welcome to #{title}
+          .hero-cta.pure-u-3-4
+            p
+              a.pure-button.pure-button-cta(href='#') Get It
+              a.pure-button.pure-button-secondary(href='#') Or Not
